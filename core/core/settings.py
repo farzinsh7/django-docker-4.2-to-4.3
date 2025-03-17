@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 
 
     # Custom Apps
+    "accounts.apps.AccountsConfig",
 
 ]
 
@@ -149,3 +150,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # EMAIL_PORT = config("EMAIL_PORT", cast=int, default=25)
 # EMAIL_HOST_USER = config("EMAIL_HOST_USER", default="")
 # EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD", default="")
+
+
+AUTH_USER_MODEL = "accounts.User"
